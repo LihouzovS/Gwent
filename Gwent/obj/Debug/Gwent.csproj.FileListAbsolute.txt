@@ -1,0 +1,63 @@
+C:\Users\Serg\Documents\Game\Gwent\Gwent\bin\Debug\Gwent.exe.config
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Gwent.csprojResolveAssemblyReference.cache
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\MainWindow.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\MainWindow.g.cs
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\App.g.cs
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Gwent_MarkupCompile.cache
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Gwent.g.resources
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Gwent.Properties.Resources.resources
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Gwent.csproj.GenerateResource.Cache
+C:\Users\Serg\Documents\Game\Gwent\Gwent\bin\Debug\Gwent.exe
+C:\Users\Serg\Documents\Game\Gwent\Gwent\bin\Debug\Gwent.pdb
+C:\Users\Serg\Documents\Game\Gwent\Gwent\bin\Debug\ClassLibrary.dll
+C:\Users\Serg\Documents\Game\Gwent\Gwent\bin\Debug\ClassLibrary.pdb
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Gwent.exe
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Gwent.pdb
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\MyDictionary.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Reg.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\WaitingWindow.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Reg.g.cs
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\WaitingWindow.g.cs
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\MainMenu.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\MainMenu.g.cs
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\ChooseDeck.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Collection.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Game.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Settings.baml
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\ChooseDeck.g.cs
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Collection.g.cs
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Game.g.cs
+C:\Users\Serg\Documents\Game\Gwent\Gwent\obj\Debug\Settings.g.cs
+G:\gw\2\Gwent\Gwent\bin\Debug\Gwent.exe.config
+G:\gw\2\Gwent\Gwent\obj\Debug\Gwent.exe
+G:\gw\2\Gwent\Gwent\obj\Debug\Gwent.pdb
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\bin\Debug\Gwent.exe.config
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.exe
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.pdb
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\bin\Debug\Gwent.exe
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\bin\Debug\Gwent.pdb
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\bin\Debug\ClassLibrary.dll
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\bin\Debug\ClassLibrary.pdb
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.csprojResolveAssemblyReference.cache
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\ChooseDeck.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Collection.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Game.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\MainMenu.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\MyDictionary.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\MainWindow.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Reg.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\WaitingWindow.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Settings.baml
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\ChooseDeck.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Collection.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Game.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\MainMenu.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\MainWindow.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Reg.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\WaitingWindow.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Settings.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\App.g.cs
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent_MarkupCompile.cache
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.g.resources
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.Properties.Resources.resources
+C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.csproj.GenerateResource.Cache

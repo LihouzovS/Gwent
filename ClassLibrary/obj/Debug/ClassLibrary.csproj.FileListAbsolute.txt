@@ -1,0 +1,18 @@
+C:\Users\Serg\Documents\Game\Gwent\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\Serg\Documents\Game\Gwent\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Serg\Documents\Game\Gwent\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\Serg\Documents\Game\Gwent\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\Serg\Documents\Game\Gwent\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.Mvvm.Desktop.dll
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.Mvvm.dll
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.dll
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.Mvvm.xml
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.xml
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\obj\Debug\ClassLibrary.pdb

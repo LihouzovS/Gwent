@@ -1,0 +1,68 @@
+﻿<Window x:Class="Gwent.Collection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Collection"
+        Width="1600"
+        Height="900">
+    <Window.Resources>
+        <ResourceDictionary Source="MyDictionary.xaml" />
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*" />
+            <RowDefinition Height="0.8*" />
+            <RowDefinition Height="0.1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*" />
+            <ColumnDefinition Width="0.58*" />
+            <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition Width="0.1*" />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnNewCards"
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Content="Новые карты"
+                Style="{StaticResource UsualButton}" />
+        <Button x:Name="Cancel"
+                Grid.Row="2"
+                Grid.Column="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Назад"
+                Style="{StaticResource UsualButton}" />
+        <StackPanel x:Name="stpValuesOfCards"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Orientation="Horizontal">
+            <RadioButton />
+            <RadioButton />
+            <RadioButton />
+            <RadioButton />
+            <RadioButton />
+            <TextBox x:Name="tbSearchString"
+                     Grid.Row="2"
+                     Grid.Column="1"
+                     Width="100"
+                     Margin="20,4,4,4"
+                     Style="{StaticResource UsualTextBox}" />
+        </StackPanel>
+        <Label x:Name="lbFractionName"
+               Grid.Row="0"
+               Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Bottom"
+               Content="Все фракции"
+               Style="{StaticResource UsualLabel}" />
+        <Button Name="btnSettings"
+                Margin="4,4,4,4"
+                Click="btnSettings_Click"
+                Style="{StaticResource SettingsButton}"
+                Template="{StaticResource NewButton}" />
+    </Grid>
+</Window>
