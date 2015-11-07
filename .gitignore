@@ -1,4 +1,4 @@
-.nuget/*
+.nuget/
 *.suo
-packages/* 
-Debug/*
+packages/ 
+Debug/
