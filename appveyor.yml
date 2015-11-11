@@ -1,7 +1,7 @@
 version: 1.0.{build}
 before_build:
 - ps: >-
-    cd C:\Учеба\Новый сезон\СТП\Gwent
+    cd C:\Users\Серг\Documents\GitHub\Gwent
         $VerFromAssemblyInfo = get-content SharedAssemblyInfo.cs
         $InstallScript = get-content Install\Gwent.iss
         $VerFromAssemblyInfo[26][27]
