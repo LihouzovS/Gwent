@@ -1,6 +1,6 @@
 version: 1.0.{build}
 before_build:
-- ps: >-
+- ps: >-		
         $VerFromAssemblyInfo = get-content SharedAssemblyInfo.cs
         $InstallScript = get-content Install\Gwent.iss
         $i = 27
