@@ -1,6 +1,6 @@
 #define Name "Gwent"
 #define Version "0.0.0.16"
-#define Publisher "Serg"
+#define Version "1.0.0.0"
 #define URL "http://www.google.com"
 #define ExeName "Gwent.exe"
 [Setup]
