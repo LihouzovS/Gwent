@@ -1,12 +1,12 @@
 #define Name "Gwent"
 #define Version "0.0.0.16"
-#define Version "1.0.0.0"
 #define URL "http://www.google.com"
 #define ExeName "Gwent.exe"
+#define ApplicationVersion GetFileVersion(ExeName)
 [Setup]
 AppId={{361E65A9-ABA7-44CA-A747-99B28252BA56}}
 AppName={#Name}
-AppVersion={#Version}
+AppVersion={#ApplicationVersion}
 AppPublisher={#Publisher}
 AppPublisherURL={#URL}
 AppSupportURL={#URL}
