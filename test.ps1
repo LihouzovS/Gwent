@@ -1,8 +1,7 @@
-
         $VerFromAssemblyInfo = get-content SharedAssemblyInfo.cs
         $InstallScript = get-content Install\Gwent.iss
         $i = 27
-		$verString = ""
+        $verString = ""
         do
         	{
         	$verString = $verString + $VerFromAssemblyInfo[38][$i]
