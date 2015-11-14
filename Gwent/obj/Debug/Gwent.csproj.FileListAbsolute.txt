@@ -61,3 +61,6 @@ C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent_MarkupCom
 C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.g.resources
 C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.Properties.Resources.resources
 C:\Учеба\Новый сезон\СТП\Gwent\Gwent\obj\Debug\Gwent.csproj.GenerateResource.Cache
+C:\Users\Серг\Documents\GitHub\Gwent\Gwent\bin\Debug\Gwent.exe.config
+C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\Gwent.exe
+C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\Gwent.pdb
