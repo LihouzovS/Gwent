@@ -6,8 +6,6 @@
 [Setup]
 AppId={{361E65A9-ABA7-44CA-A747-99B28252BA56}}
 AppName={#Name}
-AppVersion=1.0.0.0
-AppVersion={#ApplicationVersion}
 AppSupportURL={#URL}
 AppUpdatesURL={#URL}
 DefaultDirName={pf}\{#Name}
@@ -17,6 +15,7 @@ OutputBaseFileName=test-setup
 SetupIconFile=Gwent.ico
 Compression=lzma
 SolidCompression=yes
+AppVersion={#ApplicationVersion}
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"; LicenseFile: "License_ENG.txt"
