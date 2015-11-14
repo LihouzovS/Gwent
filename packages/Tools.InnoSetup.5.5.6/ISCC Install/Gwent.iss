@@ -7,8 +7,6 @@
 AppId={{361E65A9-ABA7-44CA-A747-99B28252BA56}}
 AppName={#Name}
 AppVersion={#ApplicationVersion}
-AppPublisher={#Publisher}
-AppPublisherURL={#URL}
 AppSupportURL={#URL}
 AppUpdatesURL={#URL}
 DefaultDirName={pf}\{#Name}
