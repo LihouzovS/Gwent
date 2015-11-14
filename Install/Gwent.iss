@@ -15,6 +15,7 @@ OutputBaseFileName=test-setup
 SetupIconFile=Gwent.ico
 Compression=lzma
 SolidCompression=yes
+AppVerName=aaa
 AppVersion={#ApplicationVersion}
 
 [Languages]
