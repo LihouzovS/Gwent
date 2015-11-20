@@ -58,6 +58,7 @@
     <Compile Include="CardDeck.cs" />
     <Compile Include="Crypto.cs" />
     <Compile Include="Friend.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="ValuableCard.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="Effect.cs" />

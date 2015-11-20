@@ -147,9 +147,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+    <ProjectReference Include="..\ClassLibrary\GwentClasses.csproj">
       <Project>{f716047e-0734-41f4-9495-cf5b78252a30}</Project>
-      <Name>ClassLibrary</Name>
+      <Name>GwentClasses</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

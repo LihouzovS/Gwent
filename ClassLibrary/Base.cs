@@ -20,7 +20,7 @@ namespace ClassLibrary
 
         public static void ConnectToDatabase()
         {
-            string ConnStr = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Serg\Documents\GwentDB.mdf;Integrated Security=True;Connect Timeout=30";
+            string ConnStr = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Серг\Documents\GwentDB.mdf;Integrated Security=True;Connect Timeout=30";
               Connection = new SqlConnection(ConnStr);
               Connection.Open();
         }

@@ -16,3 +16,16 @@ C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\bin\Debug\Microsof
 C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Учеба\Новый сезон\СТП\Gwent\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.Mvvm.Desktop.dll
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.Mvvm.dll
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.dll
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.Mvvm.xml
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.xml
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\Серг\Documents\GitHub\Gwent\ClassLibrary\obj\Debug\ClassLibrary.pdb
