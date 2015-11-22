@@ -1,27 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Reflection;
-using System.Data.SqlClient;
-namespace ClassLibrary
+﻿namespace ClassLibrary
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Reflection;
+    using System.Data.SqlClient;
     public class Base<T> where T : Base<T>
     {
         private static SqlConnection Connection = new SqlConnection();
         [SaveAttribute]
-        public Guid ID { get; set; }
-
         public Base()
         {
-            ID = Guid.NewGuid();
+            this.ID = Guid.NewGuid();
         }
+        public Guid ID { get; set; }
 
         public static void ConnectToDatabase()
         {
-            string ConnStr = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Серг\Documents\GwentDB.mdf;Integrated Security=True;Connect Timeout=30";
-              Connection = new SqlConnection(ConnStr);
+            string connStr = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Серг\Documents\GwentDB
+.mdf;Integrated Security=True;Connect Timeout=30";
+              Connection = new SqlConnection(connStr);
               Connection.Open();
         }
 
@@ -30,7 +30,7 @@ namespace ClassLibrary
             Connection.Close();
         }
 
-        private void SetParametres(SqlCommand cmd, object Instance)
+        private void SetParametres(SqlCommand cmd, object instance)
         {
             foreach (var p in typeof(T).GetProperties())
                 if (p.IsDefined(typeof(SaveAttribute)))
@@ -45,48 +45,48 @@ namespace ClassLibrary
                         cmd.Parameters.Add("@" + p.Name, System.Data.SqlDbType.UniqueIdentifier);
                     else
                         throw new System.Data.SqlTypes.SqlTypeException();
-                    cmd.Parameters["@" + p.Name].Value = p.GetValue(Instance);
+                    cmd.Parameters["@" + p.Name].Value = p.GetValue(instance);
                 }
         }
 
         public void Save()
         {
-            string TableName = typeof(T).Name + "s";
-            string Query = "IF OBJECT_ID('" + TableName + "', 'U') IS NULL\n" +
-                 "\tCREATE TABLE " + TableName + "\n" + "\t(\n"; ;
+            string tableName = typeof(T).Name + "s";
+            string query = "IF OBJECT_ID('" + tableName + "', 'U') IS NULL\n" +
+            "\tCREATE TABLE " + tableName + "\n" + "\t(\n";
             foreach (var p in typeof(T).GetProperties())
                 if (p.IsDefined(typeof(SaveAttribute)))
                 {
-                    Query += "\t\t" + p.Name + " ";
+                    query += "\t\t" + p.Name + " ";
                     if (p.PropertyType == typeof(string))
-                        Query += "nvarchar(50),\n";
+                        query += "nvarchar(50),\n";
                     else if (p.PropertyType == typeof(int))
-                        Query += "int,\n";
+                        query += "int,\n";
                     else if (p.PropertyType == typeof(bool))
-                        Query += "bit,\n";
+                        query += "bit,\n";
                     else if (p.PropertyType == typeof(Guid))
-                        Query += "uniqueidentifier,\n";
+                        query += "uniqueidentifier,\n";
                     else
                         throw new System.Data.SqlTypes.SqlTypeException();
                 }
-            Query += "\t)\n";
-            Query += "INSERT INTO " + TableName + " VALUES (";
+            query += "\t)\n";
+            query += "INSERT INTO " + tableName + " VALUES (";
             foreach (var p in typeof(T).GetProperties())
                 if (p.IsDefined(typeof(SaveAttribute)))
-                    Query += "@" + p.Name + ", ";
-            Query = Query.Remove(Query.Length - 2);
-            Query += ")";
-            SqlCommand cmd = new SqlCommand(Query, Connection);
-            SetParametres(cmd, this);
+                    query += "@" + p.Name + ", ";
+            query = query.Remove(query.Length - 2);
+            query += ")";
+            SqlCommand cmd = new SqlCommand(query, Connection);
+            this.SetParametres(cmd, this);
             cmd.ExecuteNonQuery();
         }
 
-        static public T FindByField(string field, string value)
+        public static T FindByField(string field, string value)
         {
-            string TableName = typeof(T).Name + "s";
-            string Query = "IF OBJECT_ID('" + TableName + "', 'U') IS NOT NULL\n";
-            Query += "\tSELECT * FROM " + TableName + " WHERE " + field + "=" + "@value";
-            SqlCommand cmd = new SqlCommand(Query, Connection);
+            string tableName = typeof(T).Name + "s";
+            string query = "IF OBJECT_ID('" + tableName + "', 'U') IS NOT NULL\n";
+            query += "\tSELECT * FROM " + tableName + " WHERE " + field + "=" + "@value";
+            SqlCommand cmd = new SqlCommand(query, Connection);
             cmd.Parameters.Add(new SqlParameter("@value", value));
             SqlDataReader reader = cmd.ExecuteReader();
             T res = (T)Activator.CreateInstance(typeof(T));
@@ -111,34 +111,34 @@ namespace ClassLibrary
             return res;
         }
 
-        public void Update(T NewValue)
+        public void Update(T newValue)
         {
-            string TableName = typeof(T).Name + "s";
-            string Query = "IF OBJECT_ID('" + TableName + "', 'U') IS NOT NULL\n";
-            Query += "\tUPDATE " + TableName + " SET ";
+            string tableName = typeof(T).Name + "s";
+            string query = "IF OBJECT_ID('" + tableName + "', 'U') IS NOT NULL\n";
+            query += "\tUPDATE " + tableName + " SET ";
             foreach (var p in typeof(T).GetProperties())
                 if (p.IsDefined(typeof(SaveAttribute)))
-                    Query += p.Name + "=@" + p.Name + ", ";
-            Query = Query.Remove(Query.Length - 2);
-            Query += "\n";
-            Query += "\tWHERE ID = @old_ID";
-            SqlCommand cmd = new SqlCommand(Query, Connection);
+                    query += p.Name + "=@" + p.Name + ", ";
+            query = query.Remove(query.Length - 2);
+            query += "\n";
+            query += "\tWHERE ID = @old_ID";
+            SqlCommand cmd = new SqlCommand(query, Connection);
             cmd.Parameters.Add("@old_ID", System.Data.SqlDbType.UniqueIdentifier);
             cmd.Parameters["@old_ID"].Value = ID;
-            SetParametres(cmd, NewValue);
+            SetParametres(cmd, newValue);
             cmd.ExecuteNonQuery();
         }
 
         public void Delete()
         {
-            string TableName = typeof(T).Name + "s";
-            string Query = "IF OBJECT_ID('" + TableName + "', 'U') IS NOT NULL\n";
-            Query += "\tDELETE FROM " + TableName + " WHERE ";
+            string tableName = typeof(T).Name + "s";
+            string query = "IF OBJECT_ID('" + tableName + "', 'U') IS NOT NULL\n";
+            query += "\tDELETE FROM " + tableName + " WHERE ";
             foreach (var p in typeof(T).GetProperties())
                 if (p.IsDefined(typeof(SaveAttribute)))
-                    Query += p.Name + "=@" + p.Name + " AND ";
-            Query = Query.Remove(Query.Length - 5);
-            SqlCommand cmd = new SqlCommand(Query, Connection);
+                    query += p.Name + "=@" + p.Name + " AND ";
+            query = query.Remove(query.Length - 5);
+            SqlCommand cmd = new SqlCommand(query, Connection);
             SetParametres(cmd, this);
             cmd.ExecuteNonQuery();
         }

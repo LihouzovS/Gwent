@@ -50,7 +50,7 @@
         <Button Name="btnCollection"
                 Grid.Row="2"
                 Grid.Column="1"
-                Click="loadCollection"
+                Click="LoadCollection"
                 Content="Моя коллекция"
                 Style="{StaticResource CollectionButton}" />
     </Grid>

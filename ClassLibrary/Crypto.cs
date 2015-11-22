@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassLibrary
+﻿namespace ClassLibrary
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
    public class Crypto
     {
-       int key = 666;
-       public Crypto() {}
+       public int key = 666;
+       public Crypto() { }
        public string Encrypt(string p_info)
        {
            byte[] arr = Encoding.Unicode.GetBytes(p_info);
@@ -23,6 +22,5 @@ namespace ClassLibrary
        {
           return Encrypt(p_info);
        }
-
     }
 }

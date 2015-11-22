@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace ClassLibrary
+﻿namespace ClassLibrary
 {
-    class Settings : Base<Settings>
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading;
+    using System.Threading.Tasks;
+    public class Settings : Base<Settings>
     ////потокобезопасный singleton. доделать замену настроек при подключении к другому аккаунту с помощью костыля или неведомой благодати
     {
         private static volatile Settings instance = null;
@@ -16,7 +15,7 @@ namespace ClassLibrary
         private bool windowedModeOn { get; set; }
         private Settings(bool p_windowedModeOn = false)
         {
-            windowedModeOn = p_windowedModeOn;
+            this.windowedModeOn = p_windowedModeOn;
         }
         public static Settings Instance
         {
@@ -36,5 +35,3 @@ namespace ClassLibrary
         }
     }
 }
-
-

@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace ClassLibrary
+﻿namespace ClassLibrary
 {
-    public class Deck: Base<Deck>
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    public class Deck : Base<Deck>
     {
         [SaveAttribute]
-        public Guid fraction { get; set; } 
+        public Guid fraction { get; set; }
         [SaveAttribute]
         public List<Guid> cards { get; set; }
         public List<Card> realCards;
 
-        public void makeDeck()
+        public void MakeDeck()
         {
-            realCards = new List<Card>();
-
+            this.realCards = new List<Card>();
         }
-
     }
 }

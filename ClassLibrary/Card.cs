@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassLibrary
+﻿namespace ClassLibrary
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
     public class Card : Base<Card>
     {
         [SaveAttribute]
@@ -14,23 +13,23 @@ namespace ClassLibrary
         public int cost { get; set; }
         [SaveAttribute]
         public string description { get; set; }
-        //  [SaveAttribute]
-        //а не лучше ли не в лейнинг, а в стринг лейнинг. да и зачем эта переменная тут, может просто добавлять во временный список?
+        // [SaveAttribute]
+        // а не лучше ли не в лейнинг, а в стринг лейнинг. да и зачем эта переменная тут, может просто добавлять во временный список?
         // public Guid laning { get; set; }
         [SaveAttribute]
-        //вот тут вопрос, надо ли лист, а, может, сделать несколько эффектов по типу названия первый второй или наоборот, "при входе в игру, тип того"
+        // вот тут вопрос, надо ли лист, а, может, сделать несколько эффектов по типу названия
+        // первый второй или наоборот, "при входе в игру, тип того"
         public Guid effect;
         public void Play() { }
         public void Die() { }
         public void ReturnToHand() { }
-        public Card(){}
+        public Card() { }
         public Card(string p_name, Effect p_effect, int p_cost = 0, string p_desc = "none")
         {
-            effect = p_effect.ID;
-            name = p_name;
-            cost = p_cost;
-            description = p_desc;
+            this.effect = p_effect.ID;
+            this.name = p_name;
+            this.cost = p_cost;
+            this.description = p_desc;
         }
-
     }
 }
