@@ -7,7 +7,7 @@
     using System.Threading;
     using System.Threading.Tasks;
     public class Settings : Base<Settings>
-    ////потокобезопасный singleton. доделать замену настроек при подключении к другому аккаунту с помощью костыля или неведомой благодати
+    ////потокобезопасный singleton. доделать замену настроек при подключении к другому аккаунту с помощью костыля или небесной благодати
     {
         private static volatile Settings instance = null;
         private static object syncRoot = new Object();

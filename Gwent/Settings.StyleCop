@@ -373,6 +373,8 @@
         </StringProperty>
         <StringProperty Name="AdvancedNaming_Delegate">
         </StringProperty>
+        <StringProperty Name="AdvancedNaming_PrivateInstanceField">
+        </StringProperty>
       </AnalyzerSettings>
     </Analyzer>
   </Analyzers>

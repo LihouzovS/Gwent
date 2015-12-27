@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MixedMinimumRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -54,23 +55,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base.cs" />
-    <Compile Include="Card.cs" />
-    <Compile Include="CardDeck.cs" />
-    <Compile Include="Crypto.cs" />
-    <Compile Include="Friend.cs" />
-    <Compile Include="Settings.cs" />
-    <Compile Include="ValuableCard.cs" />
-    <Compile Include="Deck.cs" />
-    <Compile Include="Effect.cs" />
-    <Compile Include="Fraction.cs" />
-    <Compile Include="Party.cs" />
-    <Compile Include="Gamer.cs" />
+    <Compile Include="Classes\Base.cs" />
+    <Compile Include="Classes\Card.cs" />
+    <Compile Include="Classes\CardDeck.cs" />
+    <Compile Include="Classes\Command.cs" />
+    <Compile Include="Classes\Crypto.cs" />
+    <Compile Include="Classes\Friend.cs" />
+    <Compile Include="Classes\Settings.cs" />
+    <Compile Include="Classes\ValuableCard.cs" />
+    <Compile Include="Classes\Deck.cs" />
+    <Compile Include="Classes\Effect.cs" />
+    <Compile Include="Classes\Fraction.cs" />
+    <Compile Include="Classes\Party.cs" />
+    <Compile Include="Classes\Gamer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaveAttribute.cs" />
+    <Compile Include="Classes\SaveAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
