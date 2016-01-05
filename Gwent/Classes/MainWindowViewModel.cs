@@ -9,6 +9,11 @@
 
     class MainWindowViewModel : ViewModelBase
     {
+        private string login { get; set; }
+        private string pass { get; set; }
+        private bool rememberMe { get; set; }
+        private bool showPassword { get; set; }
+        private bool admin { get; set; }
         
     }
 }
