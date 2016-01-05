@@ -19,8 +19,7 @@
 
         public static void ConnectToDatabase()
         {
-            string connStr = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Серг\Documents\GwentDB
-.mdf;Integrated Security=True;Connect Timeout=30";
+            string connStr = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Серг\Documents\GwentDB.mdf;Integrated Security=True;Connect Timeout=30";
               Connection = new SqlConnection(connStr);
               Connection.Open();
         }
@@ -70,7 +69,14 @@
                         throw new System.Data.SqlTypes.SqlTypeException();
                 }
             query += "\t)\n";
-            query += "INSERT INTO " + tableName + " VALUES (";
+            query += "INSERT INTO " + tableName;
+            query += "(";
+            foreach (var p in typeof(T).GetProperties())
+                if (p.IsDefined(typeof(SaveAttribute)))
+                    query += p.Name + ", ";
+            query = query.Remove(query.Length - 2);
+            query += ") ";
+            query += " VALUES (";
             foreach (var p in typeof(T).GetProperties())
                 if (p.IsDefined(typeof(SaveAttribute)))
                     query += "@" + p.Name + ", ";

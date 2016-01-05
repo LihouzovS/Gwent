@@ -15,29 +15,31 @@
         public Command(Action<object> execute, Predicate<object> canExecute)
         {
             if (execute == null)
+            {
                 throw new ArgumentNullException("execute");
-            _execute = execute;
-            _canExecute = canExecute;
+            }
+            this._execute = execute;
+            this._canExecute = canExecute;
         }
 
         public bool CanExecute(object parameter)
         {
-            if (_canExecute == null)
+            if (this._canExecute == null)
             {
                 return true;
             }
 
-            return _canExecute(parameter);
+            return this._canExecute(parameter);
         }
 
         public void Execute(object parameter)
         {
-            _execute(parameter);
+            this._execute(parameter);
         }
 
         public virtual void OnCanExecuteChanged()
         {
-            CanExecuteChanged.Invoke(this, EventArgs.Empty);
+            this.CanExecuteChanged.Invoke(this, EventArgs.Empty);
         }
     }
 }

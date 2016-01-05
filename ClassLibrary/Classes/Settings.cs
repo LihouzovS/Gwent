@@ -21,7 +21,6 @@
         {
             get
             {
-                Thread.Sleep(500);
                 if (instance == null)
                 {
                     lock (syncRoot)

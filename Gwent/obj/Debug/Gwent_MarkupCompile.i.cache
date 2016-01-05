@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\App.xaml
-9639325429
+9861495813
 
-16999489960
+19170060035
 13-905340094
-View\ChooseDeck.xaml;View\Collection.xaml;View\Game.xaml;View\MainMenu.xaml;View\MyDictionary.xaml;View\MainWindow.xaml;View\Reg.xaml;View\WaitingWindow.xaml;View\Settings.xaml;
+View\ChooseDeck.xaml;View\Collection.xaml;View\Game.xaml;View\MainMenu.xaml;Dictionaries\MyDictionary.xaml;View\MainWindow.xaml;View\Reg.xaml;View\WaitingWindow.xaml;View\Settings.xaml;
 
 False
 

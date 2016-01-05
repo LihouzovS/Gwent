@@ -10,7 +10,9 @@
         MaxHeight="600"
         WindowStyle="None">
     <Window.Resources>
-        <ResourceDictionary Source="MyDictionary.xaml" />
+
+            <ResourceDictionary Source="/Dictionaries/MyDictionary.xaml" />
+
     </Window.Resources>
     <Grid Margin="0,0,0,-8">
         <Grid.RowDefinitions>

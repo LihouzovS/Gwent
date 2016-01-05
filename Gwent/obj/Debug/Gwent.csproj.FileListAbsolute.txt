@@ -78,7 +78,6 @@ C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\ChooseDeck.baml
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\Collection.baml
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\Game.baml
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\MainMenu.baml
-C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\MyDictionary.baml
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\MainWindow.baml
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\Reg.baml
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\WaitingWindow.baml
@@ -91,3 +90,4 @@ C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\MainWindow.g.cs
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\Reg.g.cs
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\WaitingWindow.g.cs
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\Settings.g.cs
+C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\Dictionaries\MyDictionary.baml

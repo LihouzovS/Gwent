@@ -58,7 +58,6 @@
     <Compile Include="Classes\Base.cs" />
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\CardDeck.cs" />
-    <Compile Include="Classes\Command.cs" />
     <Compile Include="Classes\Crypto.cs" />
     <Compile Include="Classes\Friend.cs" />
     <Compile Include="Classes\Settings.cs" />
