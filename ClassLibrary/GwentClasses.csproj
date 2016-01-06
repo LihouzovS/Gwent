@@ -61,7 +61,7 @@
     <Compile Include="Classes\Crypto.cs" />
     <Compile Include="Classes\Friend.cs" />
     <Compile Include="Classes\Settings.cs" />
-    <Compile Include="Classes\ValuableCard.cs" />
+    <Compile Include="Classes\CreatureCard.cs" />
     <Compile Include="Classes\Deck.cs" />
     <Compile Include="Classes\Effect.cs" />
     <Compile Include="Classes\Fraction.cs" />

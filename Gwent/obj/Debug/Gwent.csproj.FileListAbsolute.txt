@@ -91,3 +91,6 @@ C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\Reg.g.cs
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\WaitingWindow.g.cs
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\View\Settings.g.cs
 C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\Dictionaries\MyDictionary.baml
+C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Серг\Documents\GitHub\Gwent\Gwent\obj\Debug\Gwent_MarkupCompile.lref
+C:\Users\Серг\Documents\GitHub\Gwent\Gwent\bin\Debug\MVVMCommon.dll
