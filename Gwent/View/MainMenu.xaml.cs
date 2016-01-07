@@ -16,15 +16,15 @@
     using ClassLibrary;
     public partial class MainMenu : Window
     {
-        public MainMenu(string p_login, string p_pass)
+        public MainMenu(string p_login="1", string p_pass="1")
         {
             this.InitializeComponent();
-            Gamer.ConnectToDatabase();
+           // Gamer.ConnectToDatabase();
             ////вот тут надо хорошо поработать
             ////то есть тут даже защиты от экзепшона нет. заебись
             ////геймера создать выше
-            Gamer g = Gamer.FindByField("password", p_pass);
-            Gamer.Disconnect();
+           // Gamer g = Gamer.FindByField("password", p_pass);
+           // Gamer.Disconnect();
         }
 
         private void Exit(object sender, RoutedEventArgs e)

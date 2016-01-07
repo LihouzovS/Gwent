@@ -96,7 +96,7 @@
                 Margin="32,26,33,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
-                Click="Login"
+                Command="{Binding LoginCommand}"
                 Content="Вход"
                 Style="{StaticResource BigButton}" />
 

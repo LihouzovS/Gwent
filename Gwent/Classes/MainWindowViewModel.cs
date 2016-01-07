@@ -50,13 +50,17 @@
         {
             Cards = new ObservableCollection<Card>();
             //и т.д. доделать когда понадобится
+
+            //тест
+            login = "ах ты говно собачье жлоб вонючий";
         }
 
-        private string login { get; set; }
-        private string pass { get; set; }
-        private bool rememberMe { get; set; }
-        private bool showPassword { get; set; }
-        private bool admin { get; set; }
+        public string login { get; set; }
+        public string pass { get; set; }
+        public bool rememberMe { get; set; }
+        public bool showPassword { get; set; }
+        public bool admin { get; set; }
+       
         //посмотреть, можно ли дальше тоже в приват переделать
         public ICommand LoginCommand
         {
@@ -64,7 +68,6 @@
         }
         public void Login()
         {
-            pass = "";
             var mainMenu = new MainMenu();
             mainMenu.ShowDialog();
         }
