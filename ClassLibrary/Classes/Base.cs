@@ -9,12 +9,12 @@
     using System.Data.SqlClient;
     public class Base<T> where T : Base<T>
     {
-        private static SqlConnection Connection = new SqlConnection();
-        [SaveAttribute]
+        private static SqlConnection Connection = new SqlConnection();        
         public Base()
         {
             this.ID = Guid.NewGuid();
         }
+        [SaveAttribute]
         public Guid ID { get; set; }
 
         public static void ConnectToDatabase()
