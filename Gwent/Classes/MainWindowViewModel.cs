@@ -14,8 +14,6 @@
     {
         private static MainWindowViewModel _mainWindowViewModel;
         private static object _lock = new object();
-
-
         public static MainWindowViewModel instance
         {
             get
@@ -35,7 +33,6 @@
                 return _mainWindowViewModel;
             }
         }
-
         public ObservableCollection<Card> Cards { get; set; }
         public ObservableCollection<CardDeck> CardDecks { get; set; }
         public ObservableCollection<Deck> Decks { get; set; }
@@ -46,13 +43,26 @@
         public ObservableCollection<Party> Parties { get; set; }
         public ObservableCollection<CreatureCard> CreatureCards { get; set; }
 
+        private Gamer _currentGamer;
+        public Gamer currentGamer
+        {
+            get { return _currentGamer; }
+            set
+            {
+                _currentGamer = value;
+                NotifyPropertyChanged("SelectTask");
+            }
+        }
+        public Gamer opponentGamer;
+        //надо ли делать с ним то же, что и с текущим? ничего же менять не будем
+
         public MainWindowViewModel()
         {
             Cards = new ObservableCollection<Card>();
             //и т.д. доделать когда понадобится
 
             //тест
-            login = "ах ты говно собачье жлоб вонючий";
+            
         }
 
         public string login { get; set; }
@@ -68,7 +78,6 @@
         }
         public void Login()
         {
-
 
             var mainMenu = new MainMenu();
             mainMenu.ShowDialog();
