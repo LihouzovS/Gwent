@@ -50,5 +50,7 @@
             w.ShowDialog();
         }
         private void Show_pass_Checked(object sender, RoutedEventArgs e) { }
+
+
     }
 }

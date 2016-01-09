@@ -14,7 +14,7 @@
         <local:MainWindowVM/>
     </Window.DataContext>
     <Window.Resources>
-            <ResourceDictionary Source="/MyDictionary.xaml" />
+        <ResourceDictionary Source="/MyDictionary.xaml" />
     </Window.Resources>
     <Grid Margin="0,0,0,-8">
         <Grid.RowDefinitions>
@@ -48,12 +48,12 @@
                    VerticalAlignment="Top"
                    Content="Пароль"
                    Style="{StaticResource UsualLabel}" />
-            <PasswordBox x:Name="tbPass"
+            <TextBox x:Name="tbPass"
                          HorizontalAlignment="Stretch"
                          VerticalAlignment="Top"
                          IsHitTestVisible="True"
-                       
-                         Style="{StaticResource UsualPasswordBox}" />
+                         Text="{Binding Path=pass, Mode=TwoWay}"
+                         Style="{StaticResource UsualTextBox}" />
         </StackPanel>
 
         <StackPanel Grid.Row="0"
@@ -63,16 +63,21 @@
                     VerticalAlignment="Bottom"
                     Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
-                <CheckBox x:Name="Remember_me" VerticalAlignment="Center" />
+                <CheckBox x:Name="Remember_me" 
+                          VerticalAlignment="Center" 
+                          Command="{Binding IsRememberMeCommand}"
+                      IsChecked="{Binding rememberMe, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                 <Label x:Name="Remember_me_label"
                        Content="Remember me"
-                       FontSize="12"
+                       FontSize="12"                       
                        Style="{StaticResource UsualLabel}" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <CheckBox x:Name="Show_pass"
                           VerticalAlignment="Center"
-                          Checked="Show_pass_Checked" />
+                            Command="{Binding ShowPasswordCommand}"
+                      IsChecked="{Binding showPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
                 <Label x:Name="Show_pass_label"
                        Content="Show password"
                        FontSize="12"
@@ -80,14 +85,13 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <CheckBox x:Name="admin"
-                          VerticalAlignment="Center"
-                          Checked="Show_pass_Checked" />
+                          VerticalAlignment="Center"                          
+                          Command="{Binding IsAdminMeCommand}"
+                          IsChecked="{Binding admin, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                 <Label x:Name="admin_label"
                        Content="Мне плевать на всех, паркуюсь где хочу"
-                       FontSize="8" />
+                       FontSize="6" />
             </StackPanel>
-
-
         </StackPanel>
         <Button x:Name="Login_Button"
                 Grid.Row="1"
@@ -98,7 +102,7 @@
                 VerticalAlignment="Top"
                 Command="{Binding LoginCommand}"
                 Content="Вход"
-                Style="{StaticResource BigButton}" />
+                Style="{StaticResource BigButton}"/>
 
         <Button x:Name="btn_Registration"
                 Grid.Row="1"

@@ -67,7 +67,6 @@
     <Compile Include="ViewModel\MainMenuVM.cs" />
     <Compile Include="ViewModel\MainWindowVM.cs" />
     <Compile Include="Base\ViewModelBase.cs" />
-    <Compile Include="IPasswordSupplier.cs" />
     <Compile Include="ViewModel\SettingsVM.cs" />
     <Compile Include="View\ChooseDeck.xaml.cs">
       <DependentUpon>ChooseDeck.xaml</DependentUpon>

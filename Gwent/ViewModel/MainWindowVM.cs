@@ -58,34 +58,8 @@
         public bool admin { get; set; }
 
         //посмотреть, можно ли дальше тоже в приват переделать
-        public ICommand LoginCommand
-        {
-            get { return new RelayCommand(p => this.Login()); }
-        }
-        public void Login()
-        {
 
-            var mainMenu = new MainMenu();
-            mainMenu.ShowDialog();
-        }
-        public ICommand ChooseDeckCommand
-        {
-            get { return new RelayCommand(p => this.ChooseDeck()); }
-        }
-        public void ChooseDeck()
-        {
-            var chooseDeck = new ChooseDeck();
-            chooseDeck.ShowDialog();
-        }
-        public ICommand PlayTutorCommand
-        {
-            get { return new RelayCommand(p => PlayTutor()); }
-        }
-        public void PlayTutor()
-        {
-            var game = new Game();
-            game.ShowDialog();
-        }
+
         //вот тут начинается игра! апдейт перекинуть в вм нужный 
         private Gamer _currentGamer;
         public Gamer currentGamer
@@ -99,6 +73,52 @@
         }
         public Gamer opponentGamer { get; set; }
         //надо ли делать с ним то же, что и с текущим? ничего же менять не будем
+        public void Login()
+        {
+            var mainMenu = new MainMenu();
+            mainMenu.ShowDialog();
+        }
+        public void ChooseDeck()
+        {
+            var chooseDeck = new ChooseDeck();
+            chooseDeck.ShowDialog();
+        }
+        public void PlayTutor()
+        {
+            var game = new Game();
+            game.ShowDialog();
+        }
+        public void RememberMe()
+        {
+            //вот тут запилить сериализацию в настройки, скорее всего, пароля и логика. как вариант
+            rememberMe = true;
+        }
+        //нужно ли это тут или как там у Крохмаля сделано
+        public void ShowPassword()
+        {
 
+        }
+
+        public ICommand ChooseDeckCommand
+        {
+            get { return new RelayCommand(p => this.ChooseDeck()); }
+        }
+        public ICommand PlayTutorCommand
+        {
+            get { return new RelayCommand(p => PlayTutor()); }
+        }
+        public ICommand IsRememberMeCommand
+        {
+            get { return new RelayCommand(p => RememberMe()); }
+        }
+        public ICommand LoginCommand
+        {
+            get { return new RelayCommand(p => this.Login()); }
+        }
+        public ICommand ShowPasswordCommand
+        {
+            get { return new RelayCommand(p => this.Login()); }
+        }
     }
 }
+//как у Крохмаля сделана обработка чекбоксов самое главное на завтра епт сделать блять 
