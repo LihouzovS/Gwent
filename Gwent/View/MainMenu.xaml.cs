@@ -16,7 +16,7 @@
     using ClassLibrary;
     public partial class MainMenu : Window
     {
-        public MainMenu(string p_login="1", string p_pass="1")
+        public MainMenu(string p_login = "1", string p_pass = "1")
         {
             this.InitializeComponent();
            // Gamer.ConnectToDatabase();

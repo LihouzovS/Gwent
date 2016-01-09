@@ -47,9 +47,7 @@
         {
             Cards = new ObservableCollection<Card>();
             //и т.д. доделать когда понадобится
-
-            //тест
-            
+            //тест            
         }
 
         public string login { get; set; }
@@ -57,11 +55,11 @@
         public bool rememberMe { get; set; }
         public bool showPassword { get; set; }
         public bool admin { get; set; }
-       
+
         //посмотреть, можно ли дальше тоже в приват переделать
         public ICommand LoginCommand
         {
-            get { return new RelayCommand(p => Login()); }
+            get { return new RelayCommand(p => this.Login()); }
         }
         public void Login()
         {
@@ -69,19 +67,37 @@
             var mainMenu = new MainMenu();
             mainMenu.ShowDialog();
         }
+        public ICommand ChooseDeckCommand
+        {
+            get { return new RelayCommand(p => this.ChooseDeck()); }
+        }
+        public void ChooseDeck()
+        {
+            var chooseDeck = new ChooseDeck();
+            chooseDeck.ShowDialog();
+        }
+        public ICommand PlayTutorCommand
+        {
+            get { return new RelayCommand(p => PlayTutor()); }
+        }
+        public void PlayTutor()
+        {
+            var game = new Game();
+            game.ShowDialog();
+        }
         //вот тут начинается игра!
         private Gamer _currentGamer;
         public Gamer currentGamer
         {
-            get { return _currentGamer; }
+            get { return this._currentGamer; }
             set
             {
-                _currentGamer = value;
-                NotifyPropertyChanged("SelectTask");
+                this._currentGamer = value;
+                this.NotifyPropertyChanged("currentGamer");
             }
         }
-        public Gamer opponentGamer;
+        public Gamer opponentGamer { get; set; }
         //надо ли делать с ним то же, что и с текущим? ничего же менять не будем
-public 
+
     }
 }

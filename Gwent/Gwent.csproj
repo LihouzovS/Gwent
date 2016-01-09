@@ -61,9 +61,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\Command.cs" />
-    <Compile Include="Classes\MainWindowViewModel.cs" />
+    <Compile Include="Classes\GeneralVM.cs" />
+    <Compile Include="ViewModel\ChooseDeckVM.cs" />
+    <Compile Include="ViewModel\GameVM.cs" />
+    <Compile Include="ViewModel\MainMenuVM.cs" />
+    <Compile Include="ViewModel\MainWindowVM.cs" />
     <Compile Include="Classes\ViewModelBase.cs" />
     <Compile Include="IPasswordSupplier.cs" />
+    <Compile Include="ViewModel\SettingsVM.cs" />
     <Compile Include="View\ChooseDeck.xaml.cs">
       <DependentUpon>ChooseDeck.xaml</DependentUpon>
     </Compile>
@@ -101,7 +106,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Dictionaries\MyDictionary.xaml">
+    <Page Include="Dictionaries\CommonDicrionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

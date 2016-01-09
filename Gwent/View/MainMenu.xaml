@@ -46,6 +46,7 @@
                 VerticalAlignment="Center"
                 Click="ChooseDeck"
                 Content="Тренировка"
+                
                 Style="{StaticResource UsualButton}" />
         <Button Name="btnCollection"
                 Grid.Row="2"

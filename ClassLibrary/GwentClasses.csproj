@@ -55,7 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Base.cs" />
+    <Compile Include="Classes\Base.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\CardDeck.cs" />
     <Compile Include="Classes\Crypto.cs" />
