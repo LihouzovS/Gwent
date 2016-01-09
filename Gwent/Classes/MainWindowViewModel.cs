@@ -43,19 +43,6 @@
         public ObservableCollection<Party> Parties { get; set; }
         public ObservableCollection<CreatureCard> CreatureCards { get; set; }
 
-        private Gamer _currentGamer;
-        public Gamer currentGamer
-        {
-            get { return _currentGamer; }
-            set
-            {
-                _currentGamer = value;
-                NotifyPropertyChanged("SelectTask");
-            }
-        }
-        public Gamer opponentGamer;
-        //надо ли делать с ним то же, что и с текущим? ничего же менять не будем
-
         public MainWindowViewModel()
         {
             Cards = new ObservableCollection<Card>();
@@ -82,5 +69,19 @@
             var mainMenu = new MainMenu();
             mainMenu.ShowDialog();
         }
+        //вот тут начинается игра!
+        private Gamer _currentGamer;
+        public Gamer currentGamer
+        {
+            get { return _currentGamer; }
+            set
+            {
+                _currentGamer = value;
+                NotifyPropertyChanged("SelectTask");
+            }
+        }
+        public Gamer opponentGamer;
+        //надо ли делать с ним то же, что и с текущим? ничего же менять не будем
+public 
     }
 }

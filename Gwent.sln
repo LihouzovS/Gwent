@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gwent", "Gwent\Gwent.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GwentClasses", "ClassLibrary\GwentClasses.csproj", "{F716047E-0734-41F4-9495-CF5B78252A30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GwentConsolePrototype", "GwentConsolePrototype\GwentConsolePrototype.csproj", "{5C0BBD15-06E1-41CA-A4A6-A9563DB2AE88}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,10 +19,6 @@ Global
 		{F716047E-0734-41F4-9495-CF5B78252A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F716047E-0734-41F4-9495-CF5B78252A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F716047E-0734-41F4-9495-CF5B78252A30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C0BBD15-06E1-41CA-A4A6-A9563DB2AE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C0BBD15-06E1-41CA-A4A6-A9563DB2AE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C0BBD15-06E1-41CA-A4A6-A9563DB2AE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C0BBD15-06E1-41CA-A4A6-A9563DB2AE88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
