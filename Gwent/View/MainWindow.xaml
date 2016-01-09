@@ -11,7 +11,7 @@
         MaxHeight="600"
         WindowStyle="None">
     <Window.DataContext>
-        <local:MainWindowViewModel/>
+        <local:MainWindowVM/>
     </Window.DataContext>
     <Window.Resources>
             <ResourceDictionary Source="/Dictionaries/MyDictionary.xaml" />

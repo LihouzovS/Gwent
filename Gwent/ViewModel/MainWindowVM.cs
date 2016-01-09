@@ -10,11 +10,11 @@
     using MVVMCommon;
     using ICommand = System.Windows.Input.ICommand;
 
-    class MainWindowViewModel : ViewModelBase
+    public class MainWindowVM : ViewModelBase
     {
-        private static MainWindowViewModel _mainWindowViewModel;
+        private static MainWindowVM _mainWindowViewModel;
         private static object _lock = new object();
-        public static MainWindowViewModel instance
+        public static MainWindowVM instance
         {
             get
             {
@@ -24,7 +24,7 @@
                     {
                         if (_mainWindowViewModel == null)
                         {
-                            _mainWindowViewModel = new MainWindowViewModel();
+                            _mainWindowViewModel = new MainWindowVM();
                         }
                     }
                 }
@@ -33,6 +33,7 @@
                 return _mainWindowViewModel;
             }
         }
+        // это перекинуть в дженерал
         public ObservableCollection<Card> Cards { get; set; }
         public ObservableCollection<CardDeck> CardDecks { get; set; }
         public ObservableCollection<Deck> Decks { get; set; }
@@ -43,7 +44,7 @@
         public ObservableCollection<Party> Parties { get; set; }
         public ObservableCollection<CreatureCard> CreatureCards { get; set; }
 
-        public MainWindowViewModel()
+        public MainWindowVM()
         {
             Cards = new ObservableCollection<Card>();
             //и т.д. доделать когда понадобится
@@ -85,7 +86,7 @@
             var game = new Game();
             game.ShowDialog();
         }
-        //вот тут начинается игра!
+        //вот тут начинается игра! апдейт перекинуть в вм нужный 
         private Gamer _currentGamer;
         public Gamer currentGamer
         {
@@ -93,7 +94,7 @@
             set
             {
                 this._currentGamer = value;
-                this.NotifyPropertyChanged("currentGamer");
+                OnPropertyChanged("currentGamer");
             }
         }
         public Gamer opponentGamer { get; set; }
