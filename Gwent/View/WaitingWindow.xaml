@@ -6,7 +6,7 @@
         Height="150"
         WindowStyle="None">
     <Window.Resources>
-        <ResourceDictionary Source="/Dictionaries/MyDictionary.xaml" />
+        <ResourceDictionary Source="/MyDictionary.xaml" />
     </Window.Resources>
     <Grid>
         <TextBlock HorizontalAlignment="Center"

@@ -5,7 +5,7 @@
         Width="1600"
         Height="900">
     <Window.Resources>
-        <ResourceDictionary Source="/Dictionaries/MyDictionary.xaml" />
+        <ResourceDictionary Source="/MyDictionary.xaml" />
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
