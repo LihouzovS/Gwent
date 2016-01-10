@@ -5,7 +5,6 @@
     using Gwent.Base;
     using MVVMCommon;
     using GwentClasses.Classes;
-    using Gwent.Base;
     using ICommand = System.Windows.Input.ICommand;
 
     public class MainWindowVM : GwentViewModelBase
@@ -31,32 +30,13 @@
                 return _mainWindowViewModel;
             }
         }
-        // это перекинуть в дженерал
-        public ObservableCollection<Card> Cards { get; set; }
-        public ObservableCollection<CardDeck> CardDecks { get; set; }
-        public ObservableCollection<Deck> Decks { get; set; }
-        public ObservableCollection<Effect> Effects { get; set; }
-        public ObservableCollection<Fraction> Franks { get; set; }
-        public ObservableCollection<Friend> Friends { get; set; }
-        public ObservableCollection<Gamer> Gamers { get; set; }
-        public ObservableCollection<Party> Parties { get; set; }
-        public ObservableCollection<CreatureCard> CreatureCards { get; set; }
 
-        public MainWindowVM()
-        {
-            Cards = new ObservableCollection<Card>();
-            //и т.д. доделать когда понадобится
-            //тест            
-        }
-
+        public MainWindowVM() {}
         public string login { get; set; }
         public string pass { get; set; }
         public bool rememberMe { get; set; }
         public bool showPassword { get; set; }
         public bool admin { get; set; }
-
-        //посмотреть, можно ли дальше тоже в приват переделать
-
 
         //вот тут начинается игра! апдейт перекинуть в вм нужный 
         private Gamer _currentGamer;

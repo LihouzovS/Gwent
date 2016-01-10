@@ -69,6 +69,7 @@
     <Compile Include="Classes\Fraction.cs" />
     <Compile Include="Classes\Party.cs" />
     <Compile Include="Classes\Gamer.cs" />
+    <Compile Include="Context\DataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\SaveAttribute.cs" />
   </ItemGroup>

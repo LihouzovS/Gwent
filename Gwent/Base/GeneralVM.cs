@@ -1,8 +1,9 @@
 ﻿namespace Gwent.Base
 {
     using GwentClasses.Classes;
+    using ClassLibrary.Context;
     using System;
-    class GeneralVM : GwentViewModelBase
+    public class GeneralVM : GwentViewModelBase
     {
         // запилить сюда сеттингс
         private static volatile GeneralVM instance = null;
@@ -36,5 +37,16 @@
                 OnPropertyChanged("ActiveGamer");
             }
         }
+        private DataContext _Context;
+        public DataContext Context
+        {
+            get
+            {
+                if (_Context == null)
+                    _Context = new DataContext();
+                return _Context;
+            }
+        }
+
     }
 }
