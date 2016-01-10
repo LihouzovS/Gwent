@@ -97,6 +97,10 @@
         {
             //он и так пока показывается, поэтому я просто уберу видимость того чекбокса. потом доделать
         }
+        public void Exit()
+        {
+            Environment.Exit(0);
+        }
 
         public ICommand ChooseDeckCommand
         {
@@ -109,6 +113,10 @@
         public ICommand IsRememberMeCommand
         {
             get { return new RelayCommand(p => RememberMe()); }
+        }
+        public ICommand ExitCommand
+        {
+            get { return new RelayCommand(p => this.Exit()); }
         }
         public ICommand LoginCommand
         {

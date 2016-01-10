@@ -21,29 +21,6 @@
         {
             this.InitializeComponent();
         }
-
-        private void Login(object sender, RoutedEventArgs e)
-        {
-            ////вот тут надо удалить старые настройки или сериализировать их для того, чтоб не получилось два синглтона. вот
-
-            ///ЭТО работает
-            ///Crypto c = new Crypto();
-            ///string n =  c.Encrypt("pass");
-            ///string wi = c.Decrypt(n);
-
-            if (admin.IsChecked == true)
-            {
-                MainMenu w = new MainMenu("admin", "123");
-                w.Show();
-                this.Hide();
-            }
-            tbPass.Clear();
-            ////MainMenu w = new MainMenu();
-        }
-        private void Exit(object sender, RoutedEventArgs e)
-        {
-            Environment.Exit(0);
-        }
         private void btn_Registration_Click(object sender, RoutedEventArgs e)
         {
             Reg w = new Reg();

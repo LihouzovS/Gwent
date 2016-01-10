@@ -32,7 +32,6 @@
         <Setter Property="Height" Value="25" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="HorizontalAlignment" Value="Right" />
-        <Setter Property="Content" Value="X" />
         <Setter Property="Margin" Value="4,4,4,4" />
     </Style>
 
@@ -238,7 +237,7 @@
     </Style>
 
     <ControlTemplate x:Key="NewButton" TargetType="{x:Type Button}">
-        <Border Background="Transparent"
+        <Border Background="Pink"
                 BorderBrush="Gray"
                 BorderThickness="4"
                 CornerRadius="20"
