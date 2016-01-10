@@ -70,8 +70,7 @@
 
     <Style x:Key="UsualTextBox" TargetType="TextBox">
         <Setter Property="FontSize" Value="22" />
-        <Setter Property="FontFamily" Value="Comic Sans MS" />
-        <Setter Property="Padding" Value="4" />
+        <Setter Property="FontFamily" Value="Comic Sans MS" />     
         <Setter Property="Height" Value="30" />
     </Style>
 
