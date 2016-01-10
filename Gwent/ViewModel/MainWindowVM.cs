@@ -75,7 +75,6 @@
         {
             //вот тут запилить сериализацию в настройки, скорее всего, пароля и логика. как вариант
         }
-        //нужно ли это тут или как там у Крохмаля сделано
         public void ShowPassword()
         {
             //он и так пока показывается, поэтому я просто уберу видимость того чекбокса. потом доделать
@@ -84,7 +83,6 @@
         {
             Environment.Exit(0);
         }
-
         public ICommand RegistrarionCommand
         {
             get { return new RelayCommand(p => Registration()); }

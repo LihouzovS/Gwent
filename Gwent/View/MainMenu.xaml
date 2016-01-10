@@ -24,8 +24,6 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-
-
         <Button Name="btnExit"
                 Grid.Column="2"
                 Click="Exit"
