@@ -27,8 +27,7 @@
             <ColumnDefinition Width="174*" />
             <ColumnDefinition Width="151*" />
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnExit"
-                
+        <Button x:Name="btnExit"                
                 Style="{StaticResource ExitButton}"
                 Template="{StaticResource NewButton}"
                 Command="{Binding ExitCommand}"/>        
@@ -111,8 +110,8 @@
                 Margin="4,4,8,4"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
-                Click="btn_Registration_Click"
                 Content="Регистрация"
+                Command="{Binding RegistrationCommand}"
                 Style="{StaticResource UsualButton}" />
 
     </Grid>

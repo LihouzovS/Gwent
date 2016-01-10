@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary.Classes
+﻿namespace Gwent.Base
 {
     using System;
     using System.Windows.Input;

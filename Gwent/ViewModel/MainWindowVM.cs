@@ -1,16 +1,14 @@
-﻿namespace Gwent.Classes
+﻿namespace Gwent.ViewModel
 {
     using System;
     using System.Collections.ObjectModel;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using ClassLibrary;
-    using Gwent.Classes;
+    using Gwent.Base;
     using MVVMCommon;
+    using GwentClasses.Classes;
+    using Gwent.Base;
     using ICommand = System.Windows.Input.ICommand;
 
-    public class MainWindowVM : ViewModelBase
+    public class MainWindowVM : GwentViewModelBase
     {
         private static MainWindowVM _mainWindowViewModel;
         private static object _lock = new object();
@@ -88,6 +86,11 @@
             var game = new Game();
             game.ShowDialog();
         }
+        public void Registration()
+        {
+            var registration = new Reg();
+            registration.ShowDialog();
+        }
         public void RememberMe()
         {
             //вот тут запилить сериализацию в настройки, скорее всего, пароля и логика. как вариант
@@ -102,6 +105,10 @@
             Environment.Exit(0);
         }
 
+        public ICommand RegistrarionCommand
+        {
+            get { return new RelayCommand(p => Registration()); }
+        }
         public ICommand ChooseDeckCommand
         {
             get { return new RelayCommand(p => this.ChooseDeck()); }

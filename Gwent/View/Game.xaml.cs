@@ -20,7 +20,6 @@
             this.InitializeComponent();
         }
 
-        private void btnEndTurn_Click(object sender, RoutedEventArgs e) { }
-        private void btnSettings_Click(object sender, RoutedEventArgs e) { }
+
     }
 }

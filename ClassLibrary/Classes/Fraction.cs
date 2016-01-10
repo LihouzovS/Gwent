@@ -1,10 +1,7 @@
-﻿namespace ClassLibrary
+﻿namespace GwentClasses.Classes
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+
     public class Fraction : Base<Fraction>
     {
         // нужно для связывания разных сущностей. да и мало ли, вдруг понадобится?

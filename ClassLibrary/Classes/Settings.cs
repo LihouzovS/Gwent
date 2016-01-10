@@ -1,11 +1,6 @@
-﻿namespace ClassLibrary
+﻿namespace GwentClasses.Classes
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading;
-    using System.Threading.Tasks;
     public class Settings : Base<Settings>
     ////потокобезопасный singleton. доделать замену настроек при подключении к другому аккаунту с помощью костыля или небесной благодати
     {

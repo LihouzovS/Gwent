@@ -1,7 +1,7 @@
-﻿namespace Gwent.Classes
+﻿namespace Gwent.Base
 {
     using System.ComponentModel;
-    public abstract class ViewModelBase : INotifyPropertyChanged
+    public abstract class GwentViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

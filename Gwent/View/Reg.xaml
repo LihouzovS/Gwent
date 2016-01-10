@@ -80,14 +80,14 @@
                     MaxWidth="125"
                     MaxHeight="90"
                     Margin="4"
-                    Click="Accept"
+Command="{Binding AcceptCommand}"
                     Content="Готово"
                     Style="{StaticResource UsualButton}" />
             <Button Height="auto"
                     MaxWidth="125"
                     MaxHeight="90"
                     Margin="4"
-                    Click="Cancel"
+                    Command="{Binding CancelRegistrationCommand}"
                     Content="Отмена"
                     Style="{StaticResource UsualButton}" />
         </StackPanel>

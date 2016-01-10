@@ -1,13 +1,8 @@
-﻿namespace Gwent.Classes
+﻿namespace Gwent.Base
 {
-    //почему оно не работает?
-    using ClassLibrary;
-    using Gwent.Classes;
+    using GwentClasses.Classes;
     using System;
-    using System.Collections.Generic;
-    
-
-    class GeneralVM : ViewModelBase
+    class GeneralVM : GwentViewModelBase
     {
         // запилить сюда сеттингс
         private static volatile GeneralVM instance = null;

@@ -33,12 +33,11 @@
                 Grid.Column="2"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                Click="btnEndTurn_Click"
+      
                 Content="Конец хода" />
 
         <Button Name="btnSettings"
                 Margin="4,4,4,4"
-                Click="btnSettings_Click"
                 Style="{StaticResource SettingsButton}"
                 Template="{StaticResource NewButton}" />
 
