@@ -2,7 +2,7 @@
 {
     using System;
     using System.Collections.ObjectModel;
-    using Gwent.Base;
+    using Gwent.ViewModel;
     using MVVMCommon;
     using GwentClasses.Classes;
     using ICommand = System.Windows.Input.ICommand;

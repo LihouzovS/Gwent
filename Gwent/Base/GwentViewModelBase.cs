@@ -1,4 +1,4 @@
-﻿namespace Gwent.Base
+﻿namespace Gwent.ViewModel
 {
     using System.ComponentModel;
     public abstract class GwentViewModelBase : INotifyPropertyChanged

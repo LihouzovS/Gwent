@@ -1,5 +1,5 @@
-﻿namespace Gwent.Base
-{
+﻿namespace Gwent.ViewModel
+    {
     using GwentClasses.Classes;
     using ClassLibrary.Context;
     using System;

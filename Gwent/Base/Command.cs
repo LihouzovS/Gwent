@@ -1,4 +1,4 @@
-﻿namespace Gwent.Base
+﻿namespace Gwent.ViewModel
 {
     using System;
     using System.Windows.Input;

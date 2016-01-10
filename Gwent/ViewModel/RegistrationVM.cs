@@ -1,7 +1,7 @@
 ﻿namespace Gwent.ViewModel
 {
     using System;
-    using Gwent.Base;
+    using Gwent.ViewModel;
     using GwentClasses.Classes;
     using MVVMCommon;
     using ICommand = System.Windows.Input.ICommand;

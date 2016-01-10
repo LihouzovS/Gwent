@@ -1,6 +1,7 @@
 ﻿<Window x:Class="Gwent.MainMenu"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Gwent.ViewModel"
         Title="Главное меню"
         Width="574.5"
         Height="451.5"
@@ -12,6 +13,9 @@
     <Window.Resources>
         <ResourceDictionary Source="/MyDictionary.xaml" />
     </Window.Resources>
+    <Window.DataContext>
+        <local:MainMenuVM/>
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="45" />

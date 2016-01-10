@@ -10,12 +10,12 @@
         MaxWidth="450"
         MaxHeight="450"
         WindowStyle="None">
-    <Window.DataContext>
-        <local:RegistrationVM/>
-    </Window.DataContext>
     <Window.Resources>
         <ResourceDictionary Source="/MyDictionary.xaml" />
     </Window.Resources>
+    <Window.DataContext>
+        <local:RegistrationVM/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*" />
